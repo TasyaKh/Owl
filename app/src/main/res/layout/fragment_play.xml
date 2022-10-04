@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scrollWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_margin="@dimen/size_5dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/words"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_5dp"
+            android:backgroundTint="?colorPrimary"
+            android:contentDescription="@string/none"
+            android:src="@drawable/ic_refresh"
+            android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+
+            app:layout_constraintEnd_toStartOf="@+id/see_statistic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/see_statistic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_5dp"
+            android:backgroundTint="?colorPrimary"
+            android:contentDescription="@string/none"
+            android:src="@drawable/ic_wysiwyg"
+            android:tooltipText="@string/correct_words"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_margin="@dimen/size_5dp"
+            android:id="@+id/count_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="-63dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include
+        android:id="@+id/card_word"
+        layout="@layout/card_word_play_fragment" />
+
+
+    <LinearLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingVertical="20dp"
+
+        android:layout_weight="4"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:layout_weight="4"
+            android:id="@+id/translate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_5dp"
+
+            android:autofillHints="name"
+            android:backgroundTint="@color/purple_light"
+            android:fontFamily="sans-serif"
+
+            android:hint="@string/translate"
+            android:inputType="text"
+            android:maxWidth="200dp"
+
+            android:maxHeight="100dp"
+            android:maxLength="@integer/max_length_words"
+            android:minWidth="150dp"
+            android:textSize="14pt" />
+
+        <Button
+            android:layout_margin="@dimen/size_5dp"
+            android:layout_weight="1"
+            android:id="@+id/check"
+
+            android:theme="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:backgroundTint="?colorSecondary"
+            android:textColor="?colorOnPrimary"
+            android:contentDescription="check word"
+            android:textSize="18sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/check"
+            android:drawableLeft="@drawable/ic_chevron" />
+
+    </LinearLayout>
+
+</LinearLayout>

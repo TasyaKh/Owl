@@ -1,0 +1,23 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#80D4FFC8"
+        android:centerColor="#9996E1FF"
+        android:endColor="#B3BCA3FF"
+
+        android:type="linear"/>
+</shape>
+
+
+
+<!--<shape-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<gradient-->
+<!--    android:angle="135"-->
+<!--    android:startColor="@color/pink_A100"-->
+<!--    android:centerColor="@color/blue_A100"-->
+<!--    android:endColor="@color/color_purple150"-->
+
+<!--    android:type="linear"/>-->
+<!--</shape>-->

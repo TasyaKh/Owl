@@ -1,0 +1,41 @@
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<ImageSwitcher
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/change_priority"
+    android:inAnimation="@anim/nav_default_pop_enter_anim"
+    android:outAnimation="@anim/nav_default_exit_anim"
+    android:layout_marginEnd="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/not_selected"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_sun"/>
+
+    <ImageView
+        android:id="@+id/selected"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_moon_selected"/>
+
+</ImageSwitcher>
+</merge>

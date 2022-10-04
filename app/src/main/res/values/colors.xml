@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_700">#4527a0</color>
+    <color name="pink_700">#7b1fa2</color>
+    <color name="purple_900">#140078</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_green_70">#B3DEEBBA</color>
+
+    <color name="gray">#9EAFAFAF</color>
+    <color name="gray_600">#9E404040</color>
+    <color name="purple_light">#B19DD1</color>
+    <color name="color_purple150">#9C80CF</color>
+
+    <color name="green_A100">#C9F3AF</color>
+    <color name="teal_A100">#CCFFF3</color>
+    <color name="blue_A100">#C7DBFF</color>
+    <color name="pink_A100">#FFC3D7</color>
+
+    <!-- play animations fragment_play-->
+    <color name="light_yellow200">#FFFDCA</color>
+
+    <color name="transparent">#80000000</color>
+
+    <!-- hidden 20 - 30%-->
+    <color name="purple_30per">#4DB19DD1</color>
+    <color name="purple_20per">#33B19DD1</color>
+    <color name="card_view">@color/purple_light</color>
+</resources>

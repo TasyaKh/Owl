@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        android:id="@+id/language_sort">
+
+        <item
+            android:id="@+id/sort_all"
+            android:orderInCategory="100"
+            android:title="@string/all"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/sort_priority"
+            android:orderInCategory="100"
+            android:title="@string/priority"
+            app:showAsAction="never"
+            android:checked="true"/>
+
+    </group>
+</menu>

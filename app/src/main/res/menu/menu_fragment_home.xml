@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:id="@+id/main_tools">
+        <item
+            android:id="@+id/find_by_name"
+            android:orderInCategory="100"
+            android:title="@string/find"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_search"
+            app:actionViewClass="android.widget.SearchView"/>
+
+        <item
+            android:id="@+id/show_priority_words"
+            android:orderInCategory="100"
+            android:title="@string/priority"
+            app:showAsAction="ifRoom"
+            app:actionLayout="@layout/priority" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/language_sort">
+        <item
+            android:id="@+id/language_en"
+            android:checked="true"
+            android:orderInCategory="100"
+            android:title="@string/en"
+            app:showAsAction="never"
+            tools:ignore="ExtraText"/>
+        <item
+            android:id="@+id/language_ru"
+            android:orderInCategory="100"
+            android:title="@string/ru"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/sort_by">
+        <item
+            android:id="@+id/sort_default"
+            android:orderInCategory="100"
+            android:title="@string/default_"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/sort_near_data"
+            android:orderInCategory="100"
+            android:title="@string/near_data"
+            android:checked="true"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/sort_old_data"
+            android:orderInCategory="100"
+            android:title="@string/old_data"
+            app:showAsAction="never"
+            />
+    </group>
+
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_delete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/size_5dp">
+
+    <EditText
+        android:id="@+id/write_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/add_link"
+        android:autofillHints="name"
+        android:background="@null"
+
+        android:backgroundTint="@color/purple_light"
+
+        android:hint="@string/add_url"
+        android:inputType="text"
+        android:maxLength="@integer/max_length_words"
+        android:padding="@dimen/size_5dp" />
+
+    <ImageButton
+
+        android:id="@+id/add_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:contentDescription="@string/add"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="@dimen/size_5dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_wrong"
+        android:padding="@dimen/size_5dp"
+        android:text="@string/clear_all"
+        android:textSize="15sp"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/recyclerview"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/write_link"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</RelativeLayout>

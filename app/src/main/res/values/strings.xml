@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Owl</string>
+    <string name="english_word">English</string>
+    <string name="ru_word">Russia</string>
+    <string name="save">save</string>
+    <string name="description">Description</string>
+    <string name="add">add</string>
+    <string name="added">added</string>
+    <string name="search">Search</string>
+    <string name="saved">saved</string>
+    <string name="word_was_deleted">word was deleted</string>
+    <string name="created_new_word"> created new word</string>
+    <string name="one_field_empty"> not saved, one from fields is empty</string>
+    <string name="no_words"> no words</string>
+    <string name="field_empty"> field is empty</string>
+    <string name="removed">removed</string>
+
+    <string name="home">Home</string>
+    <string name="browser">Browser</string>
+
+    <!--In info Fragment Description of program-->
+    <string name="info"><![CDATA[
+     <font color="#BA55D3" align="center"><h2><b>Справка</b></h2></font><br/>
+
+      <hr>
+       <font color="#BA55D3"> <h4> Home </h4> </font>
+
+       <ul>
+        <li> Чтобы удалить элемент сделайте долгое нажатие по элементу </li> <br/>
+        <li> Чтобы посмотреть подробную информацию об элементе, нажмите на него </li> <br/>
+        <li> Для добавление нового элемента нажмите кнопку "ADD" </li> <br/>
+        <li> Чтобы изменить параметры сортировки, воспользуйтесь правым верхним меню </li> <br/>
+        <li> Чтобы найти слово нажмите на значек поиска в бар-меню </li> <br/>
+         <li> Если вы хотите пометить слово как приоритетное, нажмите на цифру слева от слова </li> <br/>
+       </ul>
+        <hr>
+
+       <font color="#BA55D3"> <h4> Play </h4> </font>
+
+        <ul>
+         <li> В меню дополнительных опций вправа сверху можно выбрать нужные слова для игры </li> <br/>
+         <li> В случае окончания игры список слов можно перезаполнить </li> <br/>
+         <li> Чтобы посмотреть статистику (возле кнопки перезагрузки), необходимо чтобы хотя бы одно слово было полностью завершено </li> <br/>
+        </ul>
+       <h4> Примечание: </h4>
+       Действия в этом окне никак не влияют на состояние словаря <br/>
+       <hr>
+
+       <h4> Ссылки </h4>
+       <a href = https://translate.google.ru>Google переводчик</a> <br/> <br/>
+       <a href = https://translate.yandex.ru>Yandex переводчик</a> <br/> <br/>
+       <a href = https://dictionary.cambridge.org/ru>Cambridge dictionary</a>
+
+        <h4> Об авторе </h4>
+        <b>ФИ:</b> Хребтова Таисия <br/>
+        <b> Группа:</b> ИСТБ-20-4 <br/>
+        <b> Дата начала разработки приложения:</b> 4.03.2022 <br/>
+
+        ]]>
+
+    </string>
+    <string name="owl">Owl</string>
+    <string name="check">Check</string>
+    <string name="word">word</string>
+    <string name="priority">priority</string>
+    <string name="all">all</string>
+    <string name="words">Words: </string>
+    <string name="en">en</string>
+    <string name="ru">ru</string>
+    <string name="none">none</string>
+
+    <string name="correct_words">correct words</string>
+
+    <!--Alert Dialog for Fragment Play-->
+    <string name="game">Game</string>
+    <string name="correct">Correct</string>
+    <string name="translate">translate</string>
+    <string name="play">Play</string>
+    <string name="find">find</string>
+    <string name="count_words">words</string>
+    <string name="data">data</string>
+    <string name="default_">default</string>
+    <string name="looking_for_english">looking for English</string>
+    <string name="points_txt">...</string>
+
+
+    <string name="up">up</string>
+    <string name="down">down</string>
+
+    <string name="day">d</string>
+    <string name="hour">h</string>
+    <string name="min">min</string>
+    <string name="sec">s</string>
+    <string name="near_data">near data</string>
+    <string name="old_data">old data</string>
+    <string name="level_up">level up</string>
+    <string name="back">back</string>
+    <string name="forward">forward</string>
+    <string name="clear_all">clear all</string>
+    <string name="add_url">add url</string>
+    <string name="delete">delete</string>
+    <string name="cancel">cancel</string>
+    <string name="canceled">canceled</string>
+    <string name="deleted_all">deleted all</string>
+    <string name="url_invalid">url invalid</string>
+
+    <string name="err_connection">some errors when connecting</string>
+    <string name="do_you_want_del_all">Are you sure want to delete all?</string>
+</resources>

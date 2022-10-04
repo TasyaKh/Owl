@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="@drawable/style_on_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginVertical="2dp"
+    android:paddingVertical="@dimen/size_5dp"
+    android:id="@+id/layoutBlock"
+    android:paddingEnd="10dp">
+
+    <include layout="@layout/list_design_end"
+        android:id="@+id/list_design_start"/>
+
+
+    <include layout="@layout/list_design_main_content"
+        android:id="@+id/list_design_main_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/timeV"
+            android:text="@string/none"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:padding="@dimen/size_5dp"
+            android:background="@drawable/shape_circle"
+            android:layout_gravity="top" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/level"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:width="40dp"
+            android:height="40dp"
+            android:gravity="center"
+            android:text="@string/none"
+            android:textStyle="bold"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:padding="@dimen/size_5dp"
+            android:background="@drawable/shape_circle"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+
+</LinearLayout>
