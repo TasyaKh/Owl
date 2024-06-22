@@ -1,5 +1,7 @@
 # Small description about my application Owl visual
 
+Андроид приложение, переводчик-словарь (en/ru)
+
 ## screens
 
 <ol>main screen
